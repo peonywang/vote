@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body{
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1em;
+    color: #000;
+    background: #FFF;
+    font-family: "微软雅黑","arial";
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+h1,h2,h3,h4,ul,ol,p{
+    padding: 0;
+    margin: 0;
+}
+li{list-style:none;}
+a{
+    text-decoration: none;
+    color: #000;
+    outline:none;
+    -moz-outline-style:none;
+}
+img{
+    max-width: 100%;
+}
+.t_cent{
+    text-align: center;
+}
+
+/*首页*/
+.main1{
+    background: url("images/bg1.jpg") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.main1 h1{
+    padding-top: 1em;
+}
+.main1 .exit{
+    width: 50%;
+    margin: -2em auto 0;
+}
+.main1 .exit a{
+    margin-bottom: 1em;
+    display: block;
+}
+.bottom{
+    text-align: center;
+    color: #FFF;
+}
