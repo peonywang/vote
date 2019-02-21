@@ -22,23 +22,31 @@ a{
 img{
     max-width: 100%;
 }
-.t_cent{
+.main{
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+h1{
     text-align: center;
 }
 
+.red{
+    color: #e74b4b;
+}
+.blue{
+    color: #004694;
+}
 /*首页*/
 .main1{
-    background: url("images/bg1.jpg") no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    background-image: url("images/bg1.jpg");
 }
 .main1 h1{
     padding-top: 1em;
 }
 .main1 .exit{
     width: 50%;
-    margin: -2em auto 0;
+    margin: -4em auto 2em;
 }
 .main1 .exit a{
     margin-bottom: 1em;
@@ -47,4 +55,137 @@ img{
 .bottom{
     text-align: center;
     color: #FFF;
+    font-size: 1.2em;
+    padding-bottom: 1.8em;
+}
+/*参选对象*/
+.main2{
+    background-image: url("images/bg2.jpg");
+}
+.main2 h1{
+    padding-top:2.5em;
+    margin-bottom:.5em;
+}
+.main2 h1 img{
+    width:50%;
+}
+.main2 .list{padding-bottom: 6em;}
+.main2 .list a{
+    display: flex;
+    -webkit-display:flex;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-bottom: 0.6em;
+    background: #0c5da9;
+    font-size: 1.5em;
+    color: #FFF;
+    padding: 1em;
+    position: relative;
+}
+
+.main2 .list a .icon{
+    height: 2em;
+    text-align: center;
+    margin-right: 0.5em;
+    width: 2.6em;
+}
+.main2 .list a .icon img{
+    height:100%;
+}
+.main2 .list a:nth-child(2n){
+    background: #FFF;
+    color:#1d2088;
+}
+.main2 .list a:after{
+    content: '';
+    width: .6em;
+    height: .6em;
+    border-top: 1px solid #FFF;
+    border-left:1px solid #FFF;
+    position: absolute;
+    right:1em;
+    top:50%;
+    transform: rotate(135deg);
+    margin-top: -0.3em;
+}
+.main2 .list a:nth-child(2n):after{
+    border-top: 1px solid #1d2088;
+    border-left:1px solid #1d2088;
+}
+/*详情*/
+/*.main3{*/
+    /*background-image: url("images/bg3.jpg");*/
+    /*background-size: 100% auto;*/
+    /*background-repeat: repeat-y;*/
+    /*background-attachment: fixed;*/
+    /*background-position: top center;*/
+/*}*/
+.main3:before {
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: url("images/bg3.jpg") top center repeat;
+    background-size: 100% auto;
+    height: 100vh;
+}
+.main3 .list{padding-top: 1px;padding-bottom: 2em;}
+.main3 .list li{
+    display: flex;
+    -webkit-display:flex;
+    align-items: center;
+    -webkit-align-items: center;
+    background: rgba(255,255,255,.9);
+    margin-bottom: 1px;
+    padding: 1em;
+}
+.main3 .userImg{
+    width: 3.5em;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 3.5em;
+    border: 1px solid #004694;
+    margin-right: 1em;
+}
+.main3 .d2{flex:1;-webkit-flex: 1;}
+.main3 .d2 .p2{line-height: 1;}
+.main3 .d2 .name{
+    font-weight: normal;
+    font-size: 1.3em;
+}
+.main3 .d2 .red{
+    font-size:.9em;
+}
+.main3 .d2 .red i{
+    font-style: normal;
+}
+.main3 .d2 .blue{
+    font-size: .9em;
+}
+.main3 .d3{
+    background: #004694;
+    color: #FFF;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    font-size: .9em;
+    display: flex;
+    -webkit-display:flex;
+    align-items: center;
+    -webkit-align-items: center;
+    text-align: center;
+}
+.main3 .d3 .icon{
+    width:1em;
+    height: 1em;
+    background: url("images/vote0.png") center no-repeat;
+    background-size: 100% auto;
+    margin-right: .5em;
+}
+.main3 .d3.act .icon{
+    background-image: url("images/vote2.png");
+}
+.main3 .d3 .text{
+    width:3em;
 }
