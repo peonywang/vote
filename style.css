@@ -24,7 +24,8 @@ img{
 }
 .main{
     background-size: cover;
-    width: 100%;
+    width: 100vw;
+    max-width: 750px;
     min-height: 100vh;
 }
 h1{
@@ -70,15 +71,18 @@ h1{
 /*参选对象*/
 .main2{
     background-image: url("images/bg2.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .main2 h1{
-    padding-top:2.5em;
+    /* padding-top:2.5em; */
     margin-bottom:.5em;
 }
 .main2 h1 img{
     width:50%;
 }
-.main2 .list{padding-bottom: 6em;}
+.main2 .list{/* padding-bottom: 6em; */}
 .main2 .list a{
     display: flex;
     -webkit-display:flex;
@@ -197,4 +201,24 @@ h1{
 }
 .main3 .d3 .text{
     width:3em;
+}
+/*活动开始结束提示*/
+.tishi{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    -webkit-display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    text-align: center;
+}
+.tishi span{
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    padding: 0.7em 1.2em;
+    border-radius: 0.4em;
 }

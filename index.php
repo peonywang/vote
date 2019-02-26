@@ -20,5 +20,6 @@
       </div>
       <div class="bottom">组织单位：中国通信企业协会</div>
   </div>
+<div class="tishi"><span>活动尚未开始<br>敬请期待...</span></div>
 </body>
 </html>
