@@ -13,7 +13,11 @@
       <h1>
           <img src="images/tit.png" alt="评选">
       </h1>
-      <div class="exit">
+      <div class="erweima">
+          <img src="images/erweima.png" alt="二维码">
+          <p>长按识别关注二维码</p>
+      </div>
+      <div class="exit" style="display: none;">
           <a href="chose.php"><img src="images/btn1.png" alt="巾帼标兵"></a>
           <a href="chose.php"><img src="images/btn2.png" alt="实践模范"></a>
           <a href="chose.php"><img src="images/btn3.png" alt="安全服务"></a>
