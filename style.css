@@ -284,4 +284,32 @@ h1{
     color: #FFF;
     line-height: 2;
     margin-top: -5em;
+    text-align: center;
+}
+
+/*排名*/
+.main3 .list li.no1{
+    background: #fae3e2;
+}
+
+.main3 .list li.no2{
+    background: #f8f8e9;
+}
+.main3 .list li.no3{
+    background: #e7f8e7;
+}
+.main3 .list li.no1 .userImg{
+    width:4.2em;
+    height:4.2em;
+    border-color: red;
+}
+.main3 .list li.no2 .userImg{
+    width:4em;
+    height:4em;
+    border-color: #aea001;
+}
+.main3 .list li.no3 .userImg{
+    width:3.7em;
+    height:3.7em;
+    border-color: green;
 }

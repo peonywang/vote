@@ -12,6 +12,23 @@
 <body>
   <div class="main main3">
     <ul class="list" id="list">
+
+      <?php for ($i=1;$i<4;$i++){ ?>
+      <li class="no<?php echo $i; ?>">
+        <div class="userImg"><img src="images/avatar.jpg" alt="头像"></div>
+        <div class="d2">
+          <p class="p1">
+            <b class="name"><?php echo $i; ?>张伟</b>
+            <span class="red">(<i class="num">233</i>票)</span>
+          </p>
+          <p class="p2"><span class="blue">中国移动</span><u>员工详情&gt;&gt;</u></p>
+        </div>
+        <div class="d3">
+          <span class="icon"></span>
+          <span class="text">投 票</span>
+        </div>
+      </li>
+      <?php } ?>
       <?php for ($i=0;$i<20;$i++){ ?>
       <li>
         <div class="userImg"><img src="images/avatar.jpg" alt="头像"></div>
